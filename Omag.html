@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Omag">
+    <link rel="shortcut icon" href="logo.svg"> <!--Lien pour afficher le logo-->
+    
+    <link rel="stylesheet" href="Omag.css">
+    <title>Page Web Personnelle</title>
+    <script src="Omag.js"></script>
+</head>
+<body>
+    <img src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vlwnlMQJD_DiU9SgQ5q1mZNuidXbyaLPMfvhsxc69STiYRXZUuIrExQzBcq-MwwCB206LJILJche5Uns_Uo7HFe09gN26zt5TpxdK0xGApNmR1RhKVnaK3GujmHWClKJLS3vf2RA=s0-d" width="100%" height="900px" alt="" class="img_entete">
+    <header>
+        <div ><img src="logo1.jpg" width="70"  height="100" alt="logo" class="logo1"></div>
+        <a href="#" class="logo"> <h1>AKOUBOUA-NGOKELELE <span>GEDEON</span></h1></a>
+        <button class="burger" onclick="toggleMenu()">☰</button>
+    <ul class="entete" id="menu">
+        <li><a href="#Apropos">À Propos de Moi</a></li>
+        <li><a href="#hobbie_objectif">Hobbies et Objectifs</a></li>
+        <li><a href="#Tableau_ami">Tableau d'Amis</a></li>
+        <li><a href="#Formulaire">Formulaire de Contacts</a></li>
+
+    </ul>
+</header>
+
+    <section class="menu" id="menu-content">
+        <div class="contenu">
+        <h2><span class="propos" id="Apropos"><em>À Propos de Moi </em></span></h2>
+        
+            <img src="ang.jpg" alt="Mon image" class="image">
+            <p class="texte"> Je vous ferez une brieve description de ma personnalité et de mes objectifs futurs. Tout d'abord, je suis une personne formidable et joyeuse, j'aime la vie et tout ce qu'elle m'offre au quotidien. 
+                J'aime beaucoup les voyages, je deteste la monotonie. J'aime les changemenets, les aventures et toutes les fortes sensations qu'elles apportent. Je suis passionné par la découverte et par l'informatique. </p>
+            
+            
+            <p class="texte"> En ce qui concerne mes ambitions, j'ai l'intention de devenir un grand ingénieur qui se dinstingue des autres de part ses aptitudes et sa determination. 
+                J'ai aussi pour ambition d'ouvrir une entreprise personnelle dans le domaine de l'informatique, afin de participer activement dans la developpement des nouvelles technologies.
+            </p>
+        </div>
+    </section>
+
+    <section id="hobbie_objectif">
+        <img src="https://cdn.pixabay.com/photo/2023/09/30/21/16/river-8286407_640.png" width="100%" height="500" alt="image paysage" class="img_hobbie">
+        <div class="forme">
+            <h2 class="objects"><em>Hobbies et Objectifs</em></h2>
+            <h3 class="hob"><em>Hobbies</em></h3>
+            <p class="hobbies"> Je suis un adepte de Basket-Ball, j'ai participé à quelques compétitions dans les années antérieures avec mon ancien club de Basket. 
+                De plus, j'aime beaucoup la lecture, je passe beaucoup de temps à lire des livres qui me passionnent, tels que: Père riche,Père pauvre. Become de Michelle Obama et bien d'autres encore. 
+            Et pour finir, je regarde aussi beaucoup des vidéos de motivations sur tiktok. </p>
+            <ul class="loisir">
+                <li>Basket-Ball</li>
+                <li>Lecture</li>
+                <li>Les voyages</li>
+                <li>Suivre des vidéos</li>
+
+            </ul>
+
+            <h3 class="obj"><em>Objectifs</em></h3>
+            <p class="objectifs"> Comme objectifs pour cette année, je souhaite acquérir des nouvelles connaissances en PHP et Framework pour améliorer mes sites web.
+                Pour ce faire, je compte m'impliquer du mieux que je pourrais pour atteindre cet objectif majeur. 
+                En plus de PHP et Framework, je compte aussi m'améliorer dans tous les autres langages susceptibles de me permettre d'être un bon ingénieur Informatique. Et dévelloper des soft-skills d'un ingénieur.
+            </p>
+            <ol class="souhait" type="A">
+                <li>M'améliorer dans tous les langages de programamtion</li>
+                <li>Développer des soft-skills</li>
+                
+
+            </ol>
+        </div>
+    </section>
+
+    <section>
+        <div class="table_ami">
+            <table>
+                <caption id="Tableau_ami">Mes Amis</caption>
+                <tr>
+                    <th>Nom et Prénom</th>
+                    <th>Âge</th>
+                    <th>Ville</th>
+                    <th>Profil instagram</th>
+                </tr>
+                <tr>
+                    <td>Ndong Be NIl Armand</td>
+                    <td>21 ans</td>
+                    <td>Libreville</td>
+                    <td><a href="https://www.instagram.com/becker.nil/?__pwa=1#">Nil Becker</a></td>
+                </tr>
+                <tr>
+                    <td>Mengona Prince Francklin</td>
+                    <td> 22 ans</td>
+                    <td>Libreville</td>
+                    <td><a href=""></a></td>
+                </tr>
+                <tr>
+                    <td>Nkoma Moussadji Esther </td>
+                    <td>21 ans</td>
+                    <td>Tetouan</td>
+                    <td><a href="https://www.instagram.com/samuella_esther/?__pwa=1#">Samuella Esther</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h3 class="titre_contact" id="Formulaire"> Contact</h3>
+
+        <form action="" method="get">
+        <div class="contact_form"> 
+            <h4>Soumettre un commentaire</h4>
+            <label class="input_boite">
+                <input type="text" placeholder="nom" required>
+            </label>
+            <label class="input_boite">
+                <input type="text" placeholder="email" required>
+            </label>
+            <label class="input_boite">
+                <textarea placeholder="message" autofocus></textarea>
+            </label>
+            <label class="input_boite">
+                <input type="submit" value="Envoyer">
+            </label>
+            
+        </div>
+    </form>
+    </section>
+
+
+    <div class="copyright">
+        <p>&copy;copyright 2024 <a href="https://www.instagram.com/ang.omag/?__pwa=1#" class="link_copy">Visitez notre page Instagram</a></p>
+
+    </div>
+
+</body>
+</html>

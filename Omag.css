@@ -1,0 +1,715 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8); /* transparence dans l'en tête */
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    transition: 0.5s;
+}
+.logo{
+    top: 0%;
+    font-size: 0.8em;
+    text-align: center;
+}
+.logo1 {       
+    border-radius: 50%;   
+    margin-right: 700px;
+}
+ h1{
+    font-size: 1.5em;
+    position: absolute;
+    left: 65px;
+    top: 40px;
+    text-align: left;
+    color: orange;
+}
+ span{
+    color: #fff;
+}
+
+/* Navigation */
+.entete{
+    display: flex;
+    gap: 15px;
+    /*list-style: none; 
+    transition: transform 0.3s; */
+    
+
+}
+/* cacher le menu sur les petits écrans */
+/*.entete{
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+}*/
+.entete li{
+    margin-right: 20px;
+    list-style: none;
+   
+    
+}
+.entete a{
+    text-decoration: none;
+    color: orange;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    transition: border-bottom 0.3s;
+   
+}
+
+/* bouton burger */
+.burger{
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+header .entete li a:hover{
+    color: #fff;
+    border-bottom: 2px solid orange;
+}
+
+/* Section principale */
+.menu{   
+    margin-top: -700px; 
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    
+}
+
+.contenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.image{   /* organisation de l'image */
+    width: 350px;
+    height: auto;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+
+
+}
+.texte{   /* structure du texte */
+    max-width: 600px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.9;
+    position: relative;
+    margin-top: -45px;
+
+}
+.contenu .texte{   /* gestion de l'emplacement du texte */
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 60px;
+    margin-left: 600px;
+    flex-direction: column;
+    
+
+}
+.propos{
+    text-align: justify;
+    position: relative;
+    margin-left: 170px;
+    color: greenyellow;
+}
+.menu .contenu .image{    /* designer les contours de l'image */
+    width: 350px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Partie des hobbies et objectifs */
+.objects{
+    text-align: justify;
+    position: relative; 
+    margin-left: 40%;
+    top: -500px;
+    color: greenyellow;
+}
+
+.hob{
+    color: red;
+    text-align: justify;
+    position: relative;
+    top: -470px;
+    margin-left: 250px;
+}
+.hobbies{
+    text-align: left;
+    max-width: 450px;
+    margin-top: -450px;
+    color: #fff;
+    margin-left: 40px;
+}
+
+.loisir{
+    color: greenyellow;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.obj{
+    color: red;
+    text-align: justify;
+    position: relative;
+    top: -225px;
+    margin-left: 75%;
+}
+.objectifs{
+    text-align: left;
+    max-width: 450px;
+    margin-top: -210px;
+    color: #fff;
+    margin-left: 60%;
+}
+
+.souhait{
+    text-align: left;
+    margin-left: 60%;
+    color: greenyellow;
+    margin-top: 20px;
+}
+
+.forme{
+    align-items: flex-start;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+table{
+    border-collapse: collapse;
+    width: 55%;
+    height: 250px;
+    background-color: lightcyan;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-top: -5px;
+    
+}
+
+td{
+    border: 1px solid black;
+}
+
+caption{
+    color: white;
+    text-transform: uppercase;
+    margin-top: 90px;
+    font-size: 1.3em;
+    font-style: italic;
+}
+.table_ami{
+    background-image: url('https://images.creativefabrica.com/products/previews/2023/09/08/y40nhSuY5/2imEgRZ2famlq1TxAG1P5CGWQ7Y-desktop.jpg');
+    height: 450px;
+    
+}
+
+@media (max-width: 1024px) {
+    .entete {
+        display: none;  /*Cacher le menu par défaut */
+    }
+
+    .entete.show {
+        display: flex; /* Montrer le menu lorsqu’on clique sur le burger */
+    }
+
+    .burger {
+        display: block; /* Afficher le bouton burger */
+    }
+    
+}
+
+@media(min-width: 992px) and (max-width: 1199px)/*déjà traité */
+{
+    body{
+        overflow-x: hidden;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .entete {
+        flex-direction: column;
+        gap: 10px; 
+        display: none; /* cacher le menu par défaut */
+        
+    }
+    .contenu .texte{   /* gestion de l'emplacement du texte */
+        text-align: left;
+        max-width: 400px;
+        margin-top: 10px;
+        color: #fff;
+        margin-left: 70%;
+        background-color: rgba(51, 51, 51, 0.8);
+            
+        
+        }
+    .entete .show{
+        display: flex; /* montrer le menu lorsqu'il clique sur burger */ 
+    }
+    .burger{
+        display: block; /* afficher le bouton burger sur petits écrans */
+    }
+
+    .contenu {
+        flex-direction: column;
+        
+    }
+
+    .image { 
+        /*width: 100%; */
+        max-width: 100%;  
+        height: auto;
+    }
+
+    .texte {
+        padding: 10px;
+        font-size: 1em;
+        color: white;
+    } 
+    .objects{
+        text-align: center;
+    }
+    .hob{
+        color: red;
+        text-align: justify;
+        position: relative;
+        top: -470px;
+        margin-right: 80%;
+    }
+    .loisir{
+        color: greenyellow;
+        margin-top: -320px;
+        margin-right: 90%;
+        
+    }
+
+    .obj{
+        color: red;
+        text-align: justify;
+        position: relative;
+        margin-top: -300px;
+        margin-left: 65%;
+    }
+    .objectifs{
+        text-align: left;
+        max-width: 450px;
+        margin-top: -500px;
+        color: white;
+        margin-left: 550px;
+        
+        
+    }
+    .souhait{
+        text-align: left;
+        margin-left: 55%;
+        color: greenyellow;
+        margin-top: -350px;
+    }
+    .forme {
+        display: flex;
+        flex-wrap: wrap; /* Permet au contenu de passer à la ligne si nécessaire */
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem; /* Ajoute un espacement entre les éléments */
+    }
+    
+}
+
+@media(min-width: 768px) and (max-width:991px)/* manque juste un petit détaile à objectif */
+{
+
+    body{
+        overflow-x: hidden;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .entete {
+        flex-direction: column;
+        gap: 10px; 
+        display: none; /* cacher le menu par défaut */
+        
+    }
+    .entete .show{
+        display: flex; /* montrer le menu lorsqu'il clique sur burger */ 
+        
+    }
+    .burger{
+        display: block; /* afficher le bouton burger sur petits écrans */
+    }
+    .img_entete { 
+        width: 1800px; 
+    }
+    
+    .menu{   
+        
+        background-color: rgba(0, 0, 0, 0.5);    
+        width: 1800px;
+    }
+    
+    .texte {
+    max-width: 600px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.9;
+    position: relative;
+    margin-top: -45px;
+    
+    }
+
+     .contenu .texte{   /* gestion de l'emplacement du texte */
+    text-align: left;
+    max-width: 400px;
+    margin-top: 10px;
+    color: #fff;
+    margin-left: 70%;
+    background-color: rgba(51, 51, 51, 0.8);
+        
+    
+    }
+
+    .objects{
+        text-align: center;
+        
+    }
+    .hob{
+        color: red;
+        text-align: justify;
+        position: relative;
+        top: -470px;
+        margin-left: 300px;
+    }
+    .hobbies{
+        text-align: left;
+        max-width: 450px;
+        margin-top: -450px;
+        color: white;
+        margin-left: 30px;
+    }
+    
+.loisir{
+    color: greenyellow;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.obj{
+    color: red;
+    text-align: justify;
+    position: relative;
+    top: -245px;
+    margin-left: 1400px ;
+}
+    
+.objectifs{
+    text-align: justify;
+    max-width: 350px;
+    margin-top: -225px;
+    color: white;
+    margin-left: 1350px;
+    display: inline-block;
+    
+   
+}
+
+.souhait{
+    text-align: left;
+    margin-left: 70%;
+    color: greenyellow;
+    margin-top: 20px;
+}
+.img_hobbie{
+    width: 1800px;
+}
+
+.table_ami{
+    background-image: url('https://images.creativefabrica.com/products/previews/2023/09/08/y40nhSuY5/2imEgRZ2famlq1TxAG1P5CGWQ7Y-desktop.jpg');
+    height: 450px;
+    width: 1800px;
+   
+}
+
+.contact{
+    background-image: url('https://images.creativefabrica.com/products/previews/2023/06/29/zSw2r4uZA/2imLFucJrvoMsnJkS2JWSzWdGB9-desktop.jpg');
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 1600px;
+    height: 650px;
+    background-position: unset;
+    margin-top: -20px;
+}
+
+}
+
+/* Design du formulaire */
+.contact{
+    background-image: url('https://images.creativefabrica.com/products/previews/2023/06/29/zSw2r4uZA/2imLFucJrvoMsnJkS2JWSzWdGB9-desktop.jpg');
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 650px;
+    background-position: unset;
+    margin-top: -20px;
+}
+
+.contact_form{
+    padding: 50px 30px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    max-width: 500px;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.contact_form .input_boite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+   
+}
+.contact_form h4{
+    color: red;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contact_form .input_boite input,
+.contact_form .input_boite textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+    border-radius: 10px;
+}
+.contact_form .input_boite input[type="submit"]
+{
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background-color: greenyellow;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+.titre_contact{
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    padding-top: 60px;
+    
+}
+
+/* Petits écrans , responsive activer le burger menu*/ 
+@media (max-width: 480px) /* il manque juste un petit détail */
+{
+    body{
+        overflow-x: hidden;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .entete {
+        flex-direction: column;
+        gap: 10px; 
+        display: none; /* cacher le menu par défaut */
+        
+    }
+    .entete .show{
+        display: flex; /* montrer le menu lorsqu'il clique sur burger */ 
+    }
+    .burger{
+        display: block; /* afficher le bouton burger sur petits écrans */
+    }
+
+    .contenu {
+        flex-direction: column;
+        
+    }
+
+    .img_entete { 
+        width: 1700px;
+        max-width: 1700px;
+
+    }
+    .menu{
+        background-color: rgba(0, 0, 0, 0.5);  
+        width: 1700px;
+    }
+
+    .texte {
+        padding: 10px;
+        font-size: 1em;
+        color: white;
+    } 
+    .contenu .texte{   /* gestion de l'emplacement du texte */
+        text-align: left;
+        max-width: 400px;
+        margin-top: 10px;
+        color: #fff;
+        margin-left: 70%;
+        background-color: rgba(51, 51, 51, 0.8);
+            
+        
+        }
+
+        .loisir{
+            color: greenyellow;
+            margin-top: -300px;
+            margin-left: 40px;
+        }
+        
+
+        .obj{
+            color: red;
+            text-align: justify;
+            position: relative;
+            top: -600px;
+            margin-left: 1000px ;
+        }
+        .objectifs{
+            text-align: justify;
+            max-width: 350px;
+            margin-top: -600px;
+            color: white;
+            margin-left: 950px;
+            display: inline-block;
+            
+           
+        } 
+        .souhait{
+            text-align: left;
+            margin-left: 900px;
+            color: greenyellow;
+            margin-top: -420px;
+        }
+       
+        .img_hobbie{
+            width: 1700px;
+        }
+        
+        .table_ami{
+            background-image: url('https://images.creativefabrica.com/products/previews/2023/09/08/y40nhSuY5/2imEgRZ2famlq1TxAG1P5CGWQ7Y-desktop.jpg');
+            height: 450px;
+            width: 1700px;
+           
+        }
+    .forme {
+        display: flex;
+        flex-wrap: wrap; /* Permet au contenu de passer à la ligne si nécessaire */
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem; /* Ajoute un espacement entre les éléments */
+    }
+    
+}
+
+/* Tablettes */
+@media (min-width: 481px) and (max-width: 768px)
+{
+    .contenu {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .image {
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+    .texte {
+        max-width: 700px;
+
+    }
+}
+
+/* Ordinateur de bureau */
+@media (min-width: 769px)
+{
+    header {
+        padding: 20px 30px;
+    }
+
+    .contenu {
+        flex-direction: row;
+    }
+
+    .texte {
+        margin-left: 20px;
+    }
+
+}
+
+/* pied de page */
+.copyright{
+    text-align: center;
+    justify-content: flex-start;
+    margin-top: -60px;
+    color: #fff;
+    font-size: 1.3em;
+}
+.link_copy{
+    color: greenyellow;
+}
